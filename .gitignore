@@ -87,3 +87,9 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp

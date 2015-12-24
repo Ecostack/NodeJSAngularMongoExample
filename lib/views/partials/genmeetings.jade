@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+    div(ng-controller="MainController")
+        p This is genmeetings!
+        p Topic:
+            input(type="text", ng-model="topic")
+        p
+            button(ng-click="generateMeetings()") Generate meetings

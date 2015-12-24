@@ -1,0 +1,20 @@
+doctype html
+html(ng-app='MeetingsApp')
+    head
+        base(href='/')
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        p
+            a(href='/partials/upcoming') Upcoming meetings
+        p
+            a(href='/partials/genmeetings') Generate meetings
+        p
+            a(href='/partials/totalcount') Total count
+        hr
+        block content
+        script(src="/bower_components/angular/angular.min.js")
+        script(src="/bower_components/angular-route/angular-route.min.js")
+        script(src="/javascripts/core.js")
