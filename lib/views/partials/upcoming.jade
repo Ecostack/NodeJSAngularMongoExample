@@ -1,5 +1,14 @@
 extends ../layout
 
 block content
-    div(ng-controller="MainController")
+    div(ng-controller="UpcomingController")
         p This is upcoming!
+        div(ng-repeat="meeting in upcoming")
+            p Topic: {{meeting.topic}}
+            p Start: {{meeting.starttime | date:'medium'}}
+            p End: {{meeting.endtime | date:'medium'}}
+            p Members:
+            ul
+            div(ng-repeat="member in meeting.members track by $index")
+                li {{member}}
+            hr

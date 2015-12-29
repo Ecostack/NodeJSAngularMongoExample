@@ -1,9 +1,11 @@
 extends ../layout
 
 block content
-    div(ng-controller="MainController")
+    div(ng-controller="GenerateMeetingsController")
         p This is genmeetings!
-        p Topic:
+        form(ng-submit="generateMeetings()")
+            p Topic:
             input(type="text", ng-model="topic")
-        p
-            button(ng-click="generateMeetings()") Generate meetings
+            p
+                button(type="submit") Generate meetings
+        p {{processText}}

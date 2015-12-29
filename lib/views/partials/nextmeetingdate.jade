@@ -1,0 +1,7 @@
+extends ../layout
+
+block content
+    div(ng-controller="NextDateForPersonController")
+        p This is next date for person!
+        div(ng-repeat="dateobject in datesOfPersons")
+            p {{dateobject.name}} - {{dateobject.starttime | date:'medium'}}
