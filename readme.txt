@@ -1,3 +1,3 @@
 npm install && bower install && npm start
 
-npm start
+Starts on port 3000
